@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Register form</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  
+  <style>
+    body {
+      background-color: lightgreen;
+    }
+    .header{
+      transform: matrix(5);
+      font-size: medium;
+      font-weight: 300;
+      color:teal;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: lightblue;
+      }
+      .login_btn:focus {
+		box-shadow: none !important;
+		outline: 0px !important;
+	}
+    }
+  </style>
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+      <div class="user_card">
+<div class="header">
+  <p>REGISTER</p>
+</div>
+        <form class=" g-3 needs-validation" novalidate >
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">First Name</label>
+              <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Last Name</label>
+              <input type="text" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">date of birth</label>
+            <input type="date" class="form-control" id="inputPassword4">
+          </div>
+      </div>
+
+
+      <div class="form-group col-lg-6">
+        <label>Age</label>
+        <input name="Age" type="number" class="form-control" />
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">profile image</label>
+          <input type="file" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Gender</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputZip">Short biography</label>
+          <textarea class="form-control" id="inputZip" maxlength="150" placeholder="something about you"></textarea>
+        </div>
+      </div>
+
+      <div class="form-row col-lg-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Agree to terms and conditions
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+      </div>
+
+      </form>
+
+    </div>
+  </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/signin.js"></script>
+</body>
+
+</html>
